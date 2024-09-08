@@ -251,7 +251,7 @@ ul {
   position: absolute;
   top: 15px;
   right: -29px;
-  background-color: var(--wostin-primary);
+  background-color: var(--wostin-white);
   width: 20px;
   height: 2px;
   content: "";
@@ -465,7 +465,7 @@ ul {
   padding: 30px 0;
 }
 
-.main-header__logo img {
+.brandLogo {
   width: 60px;
 }
 
@@ -711,6 +711,10 @@ ul {
     display: flex;
   }
 
+  .stricky-header .main-header__logo img {
+    width: 60px;
+  }
+
   .stricky-header .main-menu__list ul,
   .main-menu .main-menu__list ul {
     display: block;
@@ -913,6 +917,13 @@ ul {
   -webkit-transform: translateY(0);
   transform: translateY(0);
   visibility: visible;
+}
+
+.sticky-header__content {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  margin: 0px auto;
 }
 
 .stricky-header .main-menu__inner {
@@ -5962,9 +5973,10 @@ ul {
 }
 
 .contact-one__info li .icon {
-  height: 80px;
-  width: 80px;
-  background-color: var(--wostin-gray);
+  height: 50px;
+  width: 50px;
+  background-color: var(--wostin-base);
+  border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5984,7 +5996,7 @@ ul {
 
 .contact-one__info li .icon span {
   color: var(--wostin-primary);
-  font-size: 30px;
+  font-size: 18px;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }

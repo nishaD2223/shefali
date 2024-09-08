@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> Contact-Us </title>
     <!-- favicons Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/resources/logo-1.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/resources/logo-1.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/resources/logo-1.png" />
-    <link rel="manifest" href="assets/images/resources/logo-1.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/resources/logo2.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/resources/logo2.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/resources/logo2.png" />
+    <link rel="manifest" href="assets/images/resources/logo2.png" />
     <meta name="description" content="Sefali web and Media Solutions" />
 
     <!-- fonts -->
@@ -22,8 +22,6 @@
         rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
-
-
 
     <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
@@ -54,12 +52,15 @@
 </head>
 
 <body>
+    <div class="preloader">
+        <img class="preloader__image" width="60" src="assets/images/resources/logo2.png" alt="" />
+    </div>
     <!-- /.preloader -->
     <div class="page-wrapper">
         <header class="main-header clearfix">
             <div class="main-header__inner clearfix">
                 <div class="main-header__logo">
-                    <a href="index.html"><img src="assets/images/resources/logo-1.png" alt=""></a>
+                    <a href="index.html"><img src="assets/images/resources/logo2.png" alt="" class="brandLogo"></a>
                 </div>
                 <div class="main-menu__menu-box">
                     <div class="main-menu__menu-bottom">
@@ -147,7 +148,9 @@
                             <ul class="list-unstyled contact-one__info">
                                 <li>
                                     <div class="icon">
-                                        <span class="icon-message"></span>
+                                        <span class="icon-message">
+                                            <i class="fa-solid fa-phone"></i>
+                                        </span>
                                     </div>
                                     <div class="text">
                                         <p>Call Anytime</p>
@@ -156,7 +159,9 @@
                                 </li>
                                 <li>
                                     <div class="icon">
-                                        <span class="icon-phone-call"></span>
+                                        <span class="icon-phone-call">
+                                            <i class="fa-solid fa-envelope"></i>
+                                        </span>
                                     </div>
                                     <div class="text">
                                         <p>Write Email</p>
@@ -165,7 +170,9 @@
                                 </li>
                                 <li>
                                     <div class="icon">
-                                        <span class="icon-placeholder"></span>
+                                        <span class="icon-placeholder">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                        </span>
                                     </div>
                                     <div class="text">
                                         <p>Visit Us Anytime</p>

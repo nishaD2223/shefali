@@ -48,10 +48,6 @@
   }
 
 
-
-
-
-
   if ($(".listing-details__contact-info-phone").length) {
     $(".listing-details__contact-info-phone").on("click", function (e) {
       e.preventDefault();
@@ -150,8 +146,8 @@
         var percent = el.data("percent");
         $(el).css("width", percent).addClass("counted");
       }, {
-        accY: -50
-      }
+      accY: -50
+    }
     );
   }
 
@@ -164,8 +160,8 @@
           $(this).css("width", progressWidth + "%");
         });
       }, {
-        accY: 0
-      }
+      accY: 0
+    }
     );
   }
 
@@ -195,8 +191,8 @@
           });
         }
       }, {
-        accY: 0
-      }
+      accY: 0
+    }
     );
   }
 
@@ -313,8 +309,8 @@
       var target = $(this).attr("data-target");
       // animate
       $("html, body").animate({
-          scrollTop: $(target).offset().top
-        },
+        scrollTop: $(target).offset().top
+      },
         1000
       );
 
@@ -470,10 +466,11 @@
   }
   if ($(".sticky-header__content").length) {
     let navContent = $(".main-menu").html();
+    let navLogoContent = $(".main-header__logo").html();
     let mobileNavContainer = $(".sticky-header__content");
     // mobileNavContainer.innerHTML = navContent;
     mobileNavContainer.append(function () {
-      return navContent;
+      return navLogoContent + navContent;
     });
   }
 
@@ -592,8 +589,8 @@
     if ($(this).next().val() > 1) {
       if ($(this).next().val() > 1)
         $(this)
-        .next()
-        .val(+$(this).next().val() - 1);
+          .next()
+          .val(+$(this).next().val() - 1);
     }
   });
 
@@ -621,15 +618,6 @@
   }
 
 
-
-
-
-
-
-
-
-
-
   function thmTinyInit() {
     // tiny slider
     const tinyElm = document.querySelectorAll(".thm-tiny__slider");
@@ -638,8 +626,6 @@
       let thmTinySlider = tns(tinyOptions);
     });
   }
-
-
 
 
 
